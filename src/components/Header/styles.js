@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
   height: 116px;
@@ -27,7 +28,7 @@ export const Search  = styled.div`
   padding: 0 10px;
 `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
   display: flex;
   > img {
     width: 64px;

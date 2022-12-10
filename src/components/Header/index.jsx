@@ -1,5 +1,5 @@
 import { FiSearch } from "react-icons/fi";
-import { Container,Brand, Search, Profile, Logout } from "./styles";
+import { Container,Brand, Search, Profile } from "./styles";
 import { Input } from "../../components/Input";
 
 export function Header(){
@@ -11,7 +11,8 @@ export function Header(){
       <Search>
         <Input placeholder="Pessquisar pelo título" icon={FiSearch}/>
       </Search>
-      <Profile>
+ 
+      <Profile to="/profile">
         <div>        
           <strong>Fernanda Bittencourt</strong>
           <span>sair</span>
@@ -21,6 +22,7 @@ export function Header(){
           alt="Foto do usuário"
         />
       </Profile>
+  
     </Container>
   )
 }
